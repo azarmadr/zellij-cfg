@@ -1,0 +1,14 @@
+layout {
+    pane size=1 borderless=true {
+	plugin location="zellij:tab-bar"
+    }
+    pane
+    pane size=2 split_direction="vertical" {
+	pane borderless=true {
+	    plugin location="zellij:status-bar"
+	}
+	pane size=38 borderless=true {
+	    plugin location="file:/home/madr/zellij-pomodoro-plugin/target/wasm32-wasi/debug/pomodoro-clock.wasm"
+	}
+    }
+}
